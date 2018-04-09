@@ -26,6 +26,7 @@
 
 #include <served/net/server.hpp>
 
+using namespace served;
 using namespace served::net;
 
 server::server( const std::string & address
