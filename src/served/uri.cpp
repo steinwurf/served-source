@@ -91,7 +91,7 @@ query_unescape(const std::string& s) {
 
 	while (src_ptr < last_decodable) {
 		if (*src_ptr == '%') {
-			char dec1, dec2;
+			signed char dec1, dec2;
 			if (-1 != (dec1 = dec_to_hex[*(src_ptr + 1)])
 				&& -1 != (dec2 = dec_to_hex[*(src_ptr + 2)]))
 			{
